@@ -6,7 +6,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 Mongo_DB_URL =  os.getenv("Mongo_DB_URL")
-print(Mongo_DB_URL)
 
 import certifi
 ca = certifi.where() # ca = certificate authority
