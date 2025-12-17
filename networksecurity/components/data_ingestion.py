@@ -29,7 +29,7 @@ class DataIngestion:
 
             self.mongo_client = pymongo.MongoClient(MONGO_DB_URL)
             collection = self.mongo_client[database_name][collection_name]
-
+            
             df = pd.DataFrame(list(collection.find()))
 
             if "_id" in df.columns:
